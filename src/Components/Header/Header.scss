@@ -1,0 +1,52 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(237, 234, 234);
+    height: 300px;
+
+
+
+    .intro {
+      flex: 4;
+      margin-top: 1%;
+      text-align: center;
+    }
+
+    .introImg {
+      margin-top: 1%;
+      flex: 3;
+      align-items: center;
+      text-align: center;
+      object-fit: contain;
+      @media (max-width: 609px) {
+        display: none; /* Hide the image on screens with width <= 500px */
+      }
+    }
+  }
+  
+  .typewriter-holder {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 15%;
+  
+    h1 {
+      font-size: 3.4rem;
+    }
+  }
+  
+  .typewriter {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  @media (max-width: 609px) {
+    .header{
+        height: 250px;
+    } 
+    p{
+        font-size: 20px;
+    }
+    .typewriter{
+        font-size: 24px;
+    }
+}
